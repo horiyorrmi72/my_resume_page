@@ -16,11 +16,11 @@
         <header>
             <nav class="top-nav">
                 <ul>
-                    <li class="top_links">about</li>
-                    <li class="top_links">skills</li>
-                    <li class="top_links">portfolio</li>
-                    <li class="top_links">experience</li>
-                    <li class="top_links">contact</li>
+                    <a href="#about-me"><li class="top_links" id="about-me">about</li></a>
+                    <a href=""><li class="top_links" id="skills-container">skills</li></a>
+                    <a href="#my-portfolio"><li class="top_links" id="portfolio">portfolio</li></a>
+                    <a href="#experience"><li class="top_links" id="exprerience-container">experience</li></a>
+                    <a href="#reach-us"><li class="top_links" id="contact">contact</li></a>
                 </ul>
                 <div class="resume-link" id="header-resume">
                     <a href="https://drive.google.com/file/d/1k2R0qyRwoEM_VaoqcuvmxJ-TJNvYt75s/view?usp=sharing"
@@ -236,7 +236,7 @@
         </div>
 
 
-        <div class="portfolio">
+        <div class="portfolio" id="my-portfolio">
             <h2 class="info-headers">my portfolio</h2>
             <div class="portfolio-data">
                 <a href="https://github.com/horiyorrmi72/printf"> <img class="img-fluid" src="/imgs/printf C.jpg"
@@ -344,6 +344,17 @@
             <img src="/imgs/nik-3xNn1zGvBwY-unsplash.jpg" alt="ola & ojomo" class="gallery-item">
             <div class="caption">Ola and comrade ojomo</div>
         </div>
+    </div>
+    <div class="contact" id="reach-us">
+        <form id="contact-form">
+    <div><h3>Contact Us</h3></div>
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email" required>
+    <textarea name="message" placeholder="Your message" required></textarea>
+    <button type="submit" class="msg">Send</button>
+  </form>
+  
+          
     </div>
 
     <footer>
