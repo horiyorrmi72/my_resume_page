@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+  }
+  .info-headers{
+    text-transform: capitalize;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  
+  .header-container {
+    display: flex;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    align-items: center;
+  }
+  
+  header {
+    width: 100%;
+  }
+  
+  .mylogo {
+    width: 15%;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .top-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    float: left;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  ul .top_links {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+  .resume-link{
+    align-items: center;
+    justify-content: center;
+  }
+  .resume-link a button{
+    background-color: #4caf50;
+    justify-content: center;
+    align-items: center ;
+    padding:auto;
+    margin: 10px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    text-transform: capitalize;
+    font-weight: 700;
+    
+  }
+  /* .resume-link button{
+    background-color: #4caf50;
+    
+  } */
+  /* #header-resume{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
+  } */
+  
+  main {
+    width: 75%;
+    float: left;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  .landing-image {
+    height: 60vh;
+    background-image: url('/imgs/ola1.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    
+  }
+  
+  .landing-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .landing-text h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .landing-text p {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .landing-text a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+  }
+  .myinfo .about{
+    margin-bottom: 50px;
+  }
+  
+  .skillset {
+    display: flex;
+    width: 100%;
+  }
+  
+  .skills-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    
+  }
+  .lang-container{
+    margin-top: 40px;
+    text-transform: capitalize;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-loading {
+    width: 100%;
+    height: 1rem;
+    background-color: #ccc;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .skill-loading-line {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 0.5rem;
+    transition: width 1s ease-out;
+  }
+  
+  .sidebar {
+    width: 25%;
+    float: left;
+    padding: 20px;
+  }
+  #sidebar-skills{
+    text-align: center;
+  }
+  .experience-list ul {
+    display: flex;
+    flex-direction: column;
+  }
+.ads{
+  list-style-type:none;
+}  
+.achievement{
+  font-weight: bold;
+}
+.education-container{
+  margin-bottom: 50px;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-data {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-data:hover {
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: #fff;
+  cursor: pointer;
+}
+.portfolio-data::before{
+  color: #4caf50;
+}
+.portfolio-data::after{
+  color: #4caf50;
+}
+.portfolio-data:active{
+  color: #4caf50;
+}
+
+.gallery {
+  /* display: flex; */
+  width: 100%;
+  flex-wrap: wrap;
+  height: 200px;
+  justify-content: space-around;
+  display: none;
+}
+
+.gallery-item {
+  flex: 1 0 300px;
+  margin: 10px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.img-fluid{
+  border-radius: 30px;
+}
+
+/* .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
+} 
+*/
+
+  footer {
+    background-color: #333;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+
+  .footer-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-icons a {
+    margin: 0 10px;
+    font-size: 18px;
+  }
+
+  .footer-icons i {
+    color: #fff;
+  }
+
+  .footer-icons a:hover i {
+    opacity: 0.7;
+  }
+  .footer-links{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  }
